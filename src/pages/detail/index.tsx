@@ -72,14 +72,13 @@ export function Detail() {
             <h1 className={styles.center}>{coin?.name}</h1>
             <h1 className={styles.center}>{coin?.symbol}</h1>
 
-            <section className={styles.container}>
+            <section className={styles.content}>
                 <img src={`https://assets.coincap.io/assets/icons/${coin.symbol.toLowerCase()}@2x.png`} 
                     alt='Logo da moeda'
                     className={styles.logo}
                 />
                 <h1>{coin?.name} | {coin?.symbol} </h1>
                 <p><strong>Preço: </strong>{coin?.formatedPrice}</p>
-
                 <a>
                     <strong>Mercado: </strong>{coin?.formatedMarket}
                 </a>
